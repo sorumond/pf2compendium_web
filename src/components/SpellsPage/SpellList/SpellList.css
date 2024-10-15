@@ -1,0 +1,38 @@
+.spell-list__level {
+    margin-bottom: 40px;
+}
+
+.spell-list__category-title,
+.spell-list__level-title{
+    display: flex;
+
+    align-items: center;
+    width: 100%;
+    height: 60px;
+
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+    border-radius: 4px;
+
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+
+
+    background-color: rgba(214, 150, 0, 1);
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+}
+
+.spell-list__category-title {
+    /* height: 200px; */
+
+    text-transform: capitalize;
+
+    background-color: #b10000;
+
+    /* background-image: url('../../../assets/raccoon.webp'); */
+    background-position: center 20%;
+    background-size: cover;
+}

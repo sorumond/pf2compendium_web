@@ -1,0 +1,75 @@
+.spell-list-item {
+    position: relative;
+}
+
+.spell-list-item__background{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.spell-list-item__odd .spell-list-item__background {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.spell-list-item__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.spell-list-item__active-background {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+.spell-list-item:hover .spell-list-item__active-background {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.spell-list-item__level-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 90%;
+    margin-right: 5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.spell-list-item__label-wrapper{
+    display: flex !important;
+    flex-grow: 1;
+    align-items: center;
+    height: 100%;
+    min-height: 40px;
+    border-right-width: 3px;
+    border-left-width: 3px;
+}
+
+.spell-list-item__tag-wrapper {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.spell-list-item__tag {
+    margin-right: 5px;
+    padding: 2px 0.25rem;
+    border: 2px solid #D8C384;
+
+    color: #eeeeee;
+    font-size: 0.75rem;
+    white-space: nowrap;
+
+    background: #5D0000;
+}

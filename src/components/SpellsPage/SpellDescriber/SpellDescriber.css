@@ -1,0 +1,28 @@
+.spell-describer {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 12px;
+
+    color: #191813;
+
+    background: url('../../../assets/parchment.jpg') repeat;
+}
+
+.spell_describer__text{
+    padding-top: 2rem;
+}
+
+.spell-describer__copy-link-button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.spell-describer__favourite-link-button {
+    position: absolute;
+    top: 5px;
+    right: 45px;
+}

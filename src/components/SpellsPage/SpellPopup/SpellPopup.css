@@ -1,0 +1,63 @@
+.spell-list-popup{
+    position: fixed;
+    top: 10%;
+    left: calc(50%);
+
+    z-index: 15;
+
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    padding-right: 10px;
+    padding-bottom: 0;
+
+    overflow-y: scroll;
+
+    background-color: #292731;
+    box-shadow: 0 0 0 1px #e9d7a1, 0 0 0 2px #9f725b, inset 0 0 4px rgba(0, 0, 0, 0.25), 0 0 8px #e9d7a1;
+
+    transform: translate(-50%);
+    scrollbar-color: rgba(255, 255, 255, 0.7) transparent;
+    scrollbar-width: thin;
+}
+@media (min-width: 1200px) {
+    .spell-list-popup {
+        left: calc(50% + 130px);
+
+        width: 75%;
+    }
+}
+
+.spell-list-popup__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.spell-list-popup__title-wrapper {
+    display: flex;
+    flex: 0 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+    background: #5D0000;
+}
+
+.spell-list-popup__title {
+    flex: 1 1;
+
+    padding: 5px;
+    border-radius: 4px;
+
+    color: #ffffff;
+
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.spell-list-popup__describer-wrapper {
+    flex: 1 1 100%;
+    padding-bottom: 20px;
+}

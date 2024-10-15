@@ -1,0 +1,25 @@
+.filters__category-filter-container{
+    margin-bottom: 10px;
+}
+
+.filters__category-filter-title-container {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+.filters__category-filter-title{
+    flex: 1 1;
+}
+
+.filters__category-filter-clear-button {
+    flex: 0 0;
+    height: 100%;
+}
+
+.filters__category-filter-items-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    user-select: none;
+}

@@ -1,0 +1,80 @@
+{ 	
+    "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-rational-order"
+],
+"plugins": [
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin"
+],
+"syntax": "css",
+"rules": {
+    "string-quotes": "single",
+    "no-duplicate-at-import-rules": true,
+    "at-rule-no-unknown": null,
+    "color-no-invalid-hex": true,
+    "declaration-colon-space-before": "never",
+    "declaration-block-trailing-semicolon": "always",
+    "media-feature-range-operator-space-before": "never",
+    "media-feature-range-operator-space-after": "never",
+    "media-feature-colon-space-before": "never",
+    "no-descending-specificity": null,
+    "no-eol-whitespace": true,
+    "no-extra-semicolons": true,
+    "no-empty-first-line": true,
+    "selector-id-pattern": null,
+    "number-max-precision": null,
+    "indentation": 4,
+    "property-no-unknown": [
+        true, 
+        {
+            "ignoreProperties": ["/^coh-/", "/text-stroke/"]
+        }
+    ],
+    "property-disallowed-list": [
+        "alignment-baseline",
+        "all",
+        "backface-visibility",
+        "background-attachment",
+        "background-blend-mode",
+        "background-clip",
+        "background-origin",
+        "buffered-rendering",
+        "color-interpolation",
+        "enable-background",
+        "float",
+        "/^grid/",
+        "/^marker/"
+    ],
+    "function-url-quotes": "always",
+    "keyframes-name-pattern": null,
+    "selector-class-pattern": null,
+    "color-hex-length": "long",
+    "rule-empty-line-before": null,
+    "alpha-value-notation": "number",
+    "color-function-notation": "legacy",
+    "length-zero-no-unit": null,
+    "declaration-empty-line-before": [
+        "always",
+        {
+            "except": ["first-nested"],
+            "ignore": ["after-comment", "after-declaration"]
+        }
+    ],
+    "declaration-block-no-redundant-longhand-properties": [
+        true,
+        {
+            "ignoreShorthands" : ["padding", "/border/", "/flex/"]
+        }
+    ],
+
+    "order/properties-order": [],
+    "plugin/rational-order": [
+        true,
+        {
+            "border-in-box-model": true,
+            "empty-line-between-groups": true
+        }
+    ]
+} }

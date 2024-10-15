@@ -1,0 +1,65 @@
+.side-notification-item {
+    position: absolute;
+
+    right: calc(-100% - 20px);
+
+    width: 100%;
+
+    padding: 5px;
+    border-radius: 4px;
+
+    background-color: #292731;
+
+    transition: top 0.2s;
+
+    animation-name: side-notification-item-show-animation;
+    animation-fill-mode: forwards;
+}
+@keyframes side-notification-item-show-animation {
+    0% {
+        right: calc(-100% - 20px);
+    }
+    100% {
+        right: 0;
+    }
+}
+.side-notification-item.Hide {
+    animation-name: side-notification-item-hide-animation;
+    animation-timing-function: ease-in;
+}
+@keyframes side-notification-item-hide-animation {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: calc(-100% - 20px);
+    }
+}
+
+.side-notification-item__text-bar {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.side-notification-item__progress-bar{
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background-color: #ffffff;
+
+    animation-name: side-notification-item-progress-bar-animation;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes side-notification-item-progress-bar-animation {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}

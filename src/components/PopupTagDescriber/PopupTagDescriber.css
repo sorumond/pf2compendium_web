@@ -1,0 +1,48 @@
+.popup-tag-describer {
+    position:fixed;
+    z-index: 10;
+
+    width: 40%;
+    padding: 5px;
+
+    color: #ffffff;
+
+    background-color: #292731;
+    box-shadow: 0 0 0 1px #e9d7a1, 0 0 0 2px #9f725b, inset 0 0 4px rgba(0, 0, 0, 0.25), 0 0 8px #e9d7a1;
+
+    transition: opacity 0.2s;
+    animation-name: showTagDescriber;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+
+    pointer-events: none;
+}
+
+@keyframes showTagDescriber {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.popup-tag-describer.Hidden {
+    display: block !important;
+
+    opacity: 0;
+
+    animation-name: none;
+}
+
+
+.popup-tag-describer__title {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+
+    font-weight: bold;
+    font-size: 24px;
+
+    background: #5D0000;
+}

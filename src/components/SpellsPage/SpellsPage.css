@@ -1,0 +1,22 @@
+.spells-page__single-filter-container{
+    margin-bottom: 10px;
+}
+
+.spells-page__filter-title-container {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+.spells-page__filter-title{
+    flex: 1 1;
+}
+
+.spells-page__filter-clear-button {
+    flex: 0 0;
+    height: 100%;
+}
+
+.spells-page__filter-items-container{
+    display: flex;
+}

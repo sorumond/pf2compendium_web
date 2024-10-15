@@ -1,0 +1,43 @@
+#root {
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.Pf2Compendium {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.main {
+    position: relative;
+
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    padding-top: 20px;
+
+    background-color: #F5F4F2;
+}
+@media (min-width: 1200px) {
+    .main {
+        padding-left: 260px;
+    }
+}
+
+.Hidden {
+    display: none !important;
+}
+
+.scroll-bar-thin {
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}

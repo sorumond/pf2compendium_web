@@ -1,0 +1,8 @@
+.Container {
+    position: relative;
+
+    max-width: 1440px;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
